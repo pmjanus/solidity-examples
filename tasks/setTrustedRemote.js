@@ -25,7 +25,8 @@ module.exports = async function (taskArgs, hre) {
 
     // get remote chain id
     const remoteChainId = CHAIN_ID[taskArgs.targetNetwork]
-
+    console.log(remoteAddress)
+    console.log(localContractInstance.address)
     // concat remote and local address
     let remoteAndLocal = hre.ethers.utils.solidityPack(["address", "address"], [remoteAddress, localContractInstance.address])
 

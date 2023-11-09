@@ -13,12 +13,12 @@ module.exports = async function ({ deployments, getNamedAccounts }) {
     const _name = "Telos"
     const _symbol ="TLOS"
 
-    await deploy("OFTV2", {
+    await deploy("NativeOFTV2", {
         from: deployer,
-        args: [_name, _symbol, sharedDecimals, lzEndpointAddress],
+        args: [_name, _symbol,  sharedDecimals, lzEndpointAddress],
         log: true,
         waitConfirmations: 1,
     })
 }
 
-module.exports.tags = ["ExampleOFTV2"]
+module.exports.tags = ["NativeOFTV2"]

@@ -6,7 +6,8 @@
     "polygon",
     "arbitrum",
     "optimism",
-    "fantom"
+    "fantom",
+    "telos"
   ],
   "testnet": [
     "goerli",
@@ -15,6 +16,7 @@
     "mumbai",
     "arbitrum-goerli",
     "optimism-goerli",
-    "fantom-testnet"
+    "fantom-testnet",
+    "telos-testnet"
   ]
 }
